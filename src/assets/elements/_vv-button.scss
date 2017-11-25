@@ -1,0 +1,16 @@
+.vv-button {
+  border: none;
+  padding: 8px 20px;
+  border-radius: 1px;
+  cursor: pointer;
+  background: grey;
+  color: white;
+
+  &:hover {
+    background: red;
+  }
+}
+
+.vv-button--round{
+  border-radius: 200em;
+}
