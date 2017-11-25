@@ -17,6 +17,10 @@
   padding: 1em;
   border-bottom: $light_border;
   background-clip: padding-box;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
 }
 
 .vv-card__footer {
