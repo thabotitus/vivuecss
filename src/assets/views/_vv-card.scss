@@ -1,0 +1,31 @@
+.vv-card {
+  background: $white;
+  border-radius: $default_border_radius;
+  box-shadow: $default_box_shadow;
+}
+
+.vv-card__header {
+  padding: 1em;
+  border-bottom: $light_border;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-clip: padding-box;
+}
+
+.vv-card__content {
+  padding: 1em;
+  border-bottom: $light_border;
+  background-clip: padding-box;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
+}
+
+.vv-card__footer {
+  padding: 1em;
+  border-bottom: $light_border;
+  background: darken($white, 2%);
+  background-clip: padding-box;
+}
