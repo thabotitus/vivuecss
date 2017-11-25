@@ -1,16 +1,60 @@
+// Base Button Style
 .vv-button {
   border: none;
-  padding: 8px 20px;
+  padding: 10px 40px;
   border-radius: 1px;
   cursor: pointer;
-  background: grey;
-  color: white;
+  background: $dark_grey;
+  color: $text_color;
+  text-transform: uppercase;
+  transition: all 200ms ease-in;
+  letter-spacing: 1px;
+}
 
-  &:hover {
-    background: red;
+// Variations
+.vv-button--round{
+  border-radius: 200em;
+}
+
+.vv-button--fluid {
+  width: 100%;
+}
+
+// Colors
+$list: primary secondary navy teal pink red;
+
+@each $color in $list {
+  .vv-button--#{$color} {
+    background: transparentize(map-get($colors, $color), 0.1);
+    color: $white;
+
+    &:hover {
+      background: darken(map-get($colors, $color), 2%);
+    }
+
+    &.vv-button--outline {
+      background: none;
+      color: map-get($colors, $color);
+      box-shadow: inset 0px 0px 0px 1px map-get($colors, $color);
+
+      &:hover {
+        background: map-get($colors, $color);
+        box-shadow: inset 0px 0px 0px 0px map-get($colors, $color);
+        color: $white;
+      }
+    }
+
+    &.vv-button--disabled {
+      background: darken(map-get($colors, $color), 5%);
+      color: transparentize($white, 0.5);
+    }
   }
 }
 
-.vv-button--round{
-  border-radius: 200em;
+// Sizes
+$sizeList: tiny small medium large big huge massive;
+@each $size in $sizeList {
+  .vv-button--#{$size} {
+    font-size: map-get($sizes, $size) + em;
+  }
 }

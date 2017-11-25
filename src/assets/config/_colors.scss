@@ -1,0 +1,24 @@
+// All The Colours
+
+$white:              #ffffff;
+$navy:               #1e1146;
+$teal:               #0db4ba;
+$pink:               #f0a29e;
+$red:                #e76c89;
+
+$light_grey:         #eeeeee;
+$dark_grey:          #e5e4e9;
+
+$text_color:         darken($dark_grey, 80%);
+
+$primary_color:      $navy;
+$secondary_color:    $teal;
+
+$colors: (
+  navy: $navy,
+  teal: $teal,
+  pink: $pink,
+  red: $red,
+  primary: $primary-color,
+  secondary: $secondary-color
+);

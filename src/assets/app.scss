@@ -1,3 +1,8 @@
-@import './layout/_base.scss';
-@import './layout/_grid.scss';
-@import './elements/_vv-button.scss';
+@import './config/_colors';
+@import './config/_sizes';
+
+@import './layout/_base';
+@import './layout/_grid';
+
+
+@import './elements/_vv-button';

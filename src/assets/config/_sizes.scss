@@ -1,0 +1,19 @@
+$miniSize:                                 (10 / 14);
+$tinySize:                                 (12 / 14);
+$smallSize:                                (13 / 14);
+$mediumSize:                               (14 / 14);
+$largeSize:                                (16 / 14);
+$bigSize:                                  (18 / 14);
+$hugeSize:                                 (20 / 14);
+$massiveSize:                              (24 / 14);
+
+$sizes: (
+  mini:     $miniSize,
+  tiny:     $tinySize,
+  small:    $smallSize,
+  medium:   $mediumSize,
+  large:    $largeSize,
+  big:      $bigSize,
+  huge:     $hugeSize,
+  massive:  $massiveSize
+);
