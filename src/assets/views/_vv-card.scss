@@ -2,6 +2,7 @@
   background: $white;
   border-radius: $default_border_radius;
   box-shadow: $default_box_shadow;
+  position: relative;
 }
 
 .vv-card__header {
@@ -28,4 +29,21 @@
   border-bottom: $light_border;
   background: darken($white, 2%);
   background-clip: padding-box;
+}
+
+// INFO CARD
+$list: navy teal pink red primary secondary;
+@each $color in $list {
+  $currentColor: map-get($colors, $color);
+
+  .vv-card--#{$color} {
+    color: lighten($currentColor, 90%);
+    .vv-card__header {
+      background: $currentColor;
+    }
+
+    .vv-card__content {
+      background: $currentColor;
+    }
+  }
 }

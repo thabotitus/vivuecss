@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from '@/components/Home';
 import Library from '@/containers/Library';
+import Cards from '@/containers/Cards';
 
 Vue.use(Router);
 
@@ -16,6 +17,11 @@ export default new Router({
       path: '/library',
       name: 'Library',
       component: Library,
+    },
+    {
+      path: '/cards',
+      name: 'Cards',
+      component: Cards,
     },
   ],
 });

@@ -1,0 +1,25 @@
+.vv-topbar {
+  height: 60px;
+  background: $white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 1em;
+  margin-bottom: 2em;
+}
+
+.vv-topbar__logo {
+  font-weight: 700;
+  font-size: 1.2em;
+  border: 4px double #2c3e50;
+  padding: 5px 15px;
+  border-radius: 2px;
+  margin-right: 20px;
+}
+
+.vv-topbar__title {
+  font-weight: 700;
+  font-size: 1.2em;
+  padding: 5px 15px;
+  text-transform: uppercase;
+}
