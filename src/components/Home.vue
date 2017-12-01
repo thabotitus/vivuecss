@@ -1,6 +1,9 @@
 <template>
   <div class="hello">
-    <h1>{{ title }}</h1>
+    <div class="hello__logo">
+      {{ logoText }}
+    </div>
+    <router-link to="library" class="vv-button vv-button--round vv-button--secondary vv-button--tiny">Open App</router-link>
   </div>
 </template>
 
@@ -9,7 +12,8 @@ export default {
   name: 'Home',
   data() {
     return {
-      title: 'Welcome to < vivuecss >',
+      title: 'VVC',
+      logoText: 'VVC',
     };
   },
 };
