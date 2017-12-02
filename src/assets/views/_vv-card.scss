@@ -128,11 +128,12 @@
     left: 0;
     background-clip: padding-box;
     overflow: hidden;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,211111+100&1+0,0.4+100 */
-    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(33,17,17,0.64) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(33,17,17,0.64) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(33,17,17,0.64) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#a3211111',GradientType=1 ); /* IE6-9 */
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,211111+75&1+0,0.4+75 */
+    background: -moz-linear-gradient(left,  rgba(0,0,0,1) 0%, rgba(33,17,17,0.4) 75%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left,  rgba(0,0,0,1) 0%,rgba(33,17,17,0.4) 75%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right,  rgba(0,0,0,1) 0%,rgba(33,17,17,0.4) 75%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#66211111',GradientType=1 ); /* IE6-9 */
+
   }
 }
 
