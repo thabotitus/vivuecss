@@ -15,16 +15,17 @@
             </div>
           </div>
           <div class="row">
-            <div class="col col--1/4-large" v-for="i in 8">
+            <div class="col col--1/3-large" v-for="i in 6">
               <vv-card-info :value="i"
-                            color="">
+                            color=""
+                            description="Random Fact #">
               </vv-card-info>
             </div>
           </div>
           <div class="row">
             <div class="col col--1/2-large">
               <vv-card>
-                <vv-card-header title="daily views"></vv-card-header>
+                <vv-card-header title="daily news"></vv-card-header>
 
                 <vv-card-content>
                     Now that there is the Tec-9, a crappy spray gun from South Miami.
@@ -35,11 +36,12 @@
                 </vv-card-content>
 
                 <vv-card-footer>
-                  <div class="row">
-                    <div class="col col--1-small">
-                      <p>Just Make shit Happen</p>
-                    </div>
-                  </div>
+                  “Security is a top priority for every Apple product, and regrettably
+                  we stumbled with this release of macOS,” admitted an Apple spokesperson.
+                  “We greatly regret this error and we apologize to all Mac users, both
+                  for releasing with this vulnerability and for the concern it has caused.
+                  Our customers deserve better. We are auditing our development processes
+                  to help prevent this from happening again.”
                 </vv-card-footer>
               </vv-card>
             </div>
@@ -58,7 +60,7 @@
                 <vv-card-footer>
                   <div class="row">
                     <div class="col col--1-small">
-                      <p>Just Make shit Happen</p>
+                      <p>......</p>
                     </div>
                   </div>
                 </vv-card-footer>
@@ -77,7 +79,7 @@
           <div class="row">
             <div class="col col--1/2-large">
               <vv-card>
-                <vv-card-header title="daily views"></vv-card-header>
+                <vv-card-header title="the hill"></vv-card-header>
                 <div class="vv-card__image vv-card__image--overlay-to">
                   <img src="../assets/images/hill.jpg" />
                 </div>
@@ -85,7 +87,7 @@
             </div>
             <div class="col col--1/2-large">
               <vv-card>
-                <vv-card-header title="daily views"></vv-card-header>
+                <vv-card-header title="the bridge"></vv-card-header>
                 <div class="vv-card__image vv-card__image--overlay-to">
                   <img src="../assets/images/bridge.jpeg" />
                 </div>

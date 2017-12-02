@@ -181,5 +181,9 @@ $list: navy teal pink red primary secondary;
     .vv-card__content {
       background: $currentColor;
     }
+
+    .vv-card__footer {
+      background: darken($currentColor, 2%);
+    }
   }
 }
