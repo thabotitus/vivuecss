@@ -1,6 +1,6 @@
 <template>
   <div>
-    <i class="ion-ios-time-outline"></i>
+    <i class="ion-clock"></i>
     <span>{{ currentHour }} :</span>
     <span>{{ currentMinute }}</span>
   </div>
@@ -11,15 +11,15 @@
     name: 'time',
     data() {
       return {
-        currentHour: new Date().getHours(),
-        currentMinute: new Date().getMinutes(),
+        currentHour: (new Date().getHours() < 10 ? '0' : '') + new Date().getHours(),
+        currentMinute: (new Date().getMinutes() < 10 ? '0' : '') + new Date().getMinutes(),
       };
     },
     mounted() {
       setInterval(() => {
         const date = new Date();
-        this.currentHour = date.getHours();
-        this.currentMinute = date.getMinutes();
+        this.currentHour = (date.getHours() < 10 ? '0' : '') + date.getHours();
+        this.currentMinute = (date.getMinutes() < 10 ? '0' : '') + date.getMinutes();
       }, 1000);
     },
   };
