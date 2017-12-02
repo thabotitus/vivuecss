@@ -1,11 +1,13 @@
 .vv-topbar {
   height: 60px;
   background: $white;
-  width: 100%;
+  width: inherit;
   display: flex;
   align-items: center;
   padding: 0 1em;
   margin-bottom: 2em;
+  position: fixed;
+  z-index: 99;
 }
 
 .vv-topbar__logo {
