@@ -1,6 +1,8 @@
 <template>
   <div class="vv-topbar">
-    <span class="vv-topbar__logo">{{ title }}</span>
+    <router-link to="/">
+      <span class="vv-topbar__logo">{{ title }}</span>
+    </router-link>
     <span class="vv-topbar__title">{{ pageTitle }}</span>
     <slot></slot>
   </div>
