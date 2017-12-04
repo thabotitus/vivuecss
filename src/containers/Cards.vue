@@ -1,15 +1,16 @@
 <template>
   <div>
-    <sidebar></sidebar>
     <main>
-      <topbar pageTitle="Cards"></topbar>
+      <topbar pageTitle="Cards">
+        <main-menu></main-menu>
+      </topbar>
       <div class="main__content">
         <div class="container">
           <div class="row">
             <div class="col col--1-large">
-              <vv-card-image-banner bannerImage="bridge.jpeg"
-                                    mainHeading="the bridge"
-                                    subHeading="10th wonder of the world."
+              <vv-card-image-banner bannerImage="food.jpg"
+                                    mainHeading="the vegan"
+                                    subHeading="a short story about a vegan."
                                     class="vv-card-image-banner--overlay-left">
               </vv-card-image-banner>
             </div>
@@ -69,9 +70,9 @@
           </div>
           <div class="row">
             <div class="col col--1-large">
-              <vv-card-image-banner bannerImage="hill.jpg"
-                                    mainHeading="the hill"
-                                    subHeading="11th wonder of the world."
+              <vv-card-image-banner bannerImage="bridge.jpeg"
+                                    mainHeading="the bridge"
+                                    subHeading="build a bridge, get over it"
                                     class="vv-card-image-banner--overlay-top">
               </vv-card-image-banner>
             </div>
@@ -87,10 +88,23 @@
             </div>
             <div class="col col--1/2-large">
               <vv-card>
-                <vv-card-header title="the bridge"></vv-card-header>
+                <vv-card-header title="true friends"></vv-card-header>
                 <div class="vv-card__image vv-card__image--overlay-to">
-                  <img src="../assets/images/bridge.jpeg" />
+                  <img src="../assets/images/friends.jpg" />
                 </div>
+                <vv-card-content>
+                    May musical arrival beloved luckily adapted him. Shyness mention
+                    married son she his started now. Rose if as past near were. To
+                    graceful he elegance oh moderate attended entrance pleasure.
+                    Vulgar saw fat sudden edward way played either. Thoughts smallest
+                    at or peculiar relation breeding produced an. At depart spirit on
+                    stairs. She the either are wisdom praise things she before. Be mother
+                    itself vanity favour do me of. Begin sex was power joy after had walls miles.
+                </vv-card-content>
+
+                <vv-card-footer>
+                  <vv-button class="vv-button--teal" text="share this story"></vv-button>
+                </vv-card-footer>
               </vv-card>
             </div>
           </div>
@@ -111,6 +125,7 @@
   import vvSidebarItem from '../components/sidebar/vv-SidebarItem';
   import Topbar from '../containers/Topbar';
   import Sidebar from '../containers/Sidebar';
+  import MainMenu from '../containers/Menu';
   import vvCardInfo from '../components/card/vv-CardInfo';
 
   export default {
@@ -127,6 +142,7 @@
       vvSidebarItem,
       Topbar,
       Sidebar,
+      MainMenu,
     },
     data() {
       return {

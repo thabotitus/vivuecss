@@ -1,20 +1,21 @@
 // Config
-@import './config/_site';
-@import './config/_colors';
-@import './config/_sizes';
+@import './config/site';
+@import './config/colors';
+@import './config/sizes';
 
 // Layout
-@import './layout/_base';
-@import './layout/_grid';
-@import './layout/_main';
-@import './layout/_sidebar';
-@import './layout/_topbar';
+@import './layout/base';
+@import './layout/grid';
+@import './layout/main';
+@import './layout/sidebar';
+@import './layout/topbar';
+@import './layout/menu';
 
 // Views
-@import './views/_vv-card';
+@import './views/vv-card';
 
 // Elements
-@import './elements/_vv-button';
+@import './elements/vv-button';
 
 // Helpers
-@import './helpers/_text_helpers';
+@import './helpers/text_helpers';
