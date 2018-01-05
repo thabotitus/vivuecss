@@ -3,6 +3,13 @@
   display: flex;
   width: 100%;
   align-items: center;
+  flex: 2;
+}
+
+.vv-menu a:first-child {
+  .vv-menu__item {
+    border-left: $light_border;
+  }
 }
 
 .vv-menu__item {
@@ -10,15 +17,11 @@
   padding: 0 20px;
   display: flex;
   align-items: center;
-  // border-right: $light_border;
+  border-right: $light_border;
   // text-transform: uppercase;
   color: $primary_color;
 
   &:hover {
     background: darken($white, 1%);
-  }
-
-  &:first-of-type {
-    border-left: $light_border;
   }
 }

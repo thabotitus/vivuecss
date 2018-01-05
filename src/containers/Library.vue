@@ -1,7 +1,7 @@
 <template>
   <div class="full_layout">
     <main>
-      <topbar pageTitle="library">
+      <topbar pageTitle="home">
         <main-menu></main-menu>
       </topbar>
       <div class="main__content">
