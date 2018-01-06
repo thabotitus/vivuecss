@@ -3,7 +3,7 @@ import Router from 'vue-router';
 import Home from '@/components/Home';
 import Library from '@/containers/Library';
 import Cards from '@/containers/Cards';
-import Blog from '@/containers/Blog';
+import Budget from '@/containers/Budget';
 
 Vue.use(Router);
 
@@ -25,9 +25,9 @@ export default new Router({
       component: Cards,
     },
     {
-      path: '/blog',
-      name: 'Blog',
-      component: Blog,
+      path: '/budget',
+      name: 'Budget',
+      component: Budget,
     },
   ],
 });

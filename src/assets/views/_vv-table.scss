@@ -1,0 +1,65 @@
+.vv-table {
+  border: $light-border;
+  background: darken(white, 1%);
+  width: 100%;
+  max-width: 100%;
+  border-spacing: 0;
+  border-collapse: separate;
+  border-bottom: none;
+  font-size: 0.95em;
+}
+
+.vv-table__td {
+  border-right: $light-border;
+  border-bottom: $light-border;
+  font-weight: 200;
+  min-height: 40px;
+  padding: 12px 15px;
+}
+
+.vv-table--align-right {
+  text-align: right;
+}
+
+.vv-table--td-center {
+  text-align: center;
+}
+
+.vv-table--td-bold {
+  font-weight: 900;
+}
+
+.vv-status--bad {
+  border-collapse: separate;
+  border-color: 1px solid $red;
+  background: transparentize($red, 0.9);
+}
+
+
+.vv-status--bad > .vv-table__td {
+  color: $red;
+  border-color: transparentize($red, 0.5);
+  border-top: 1px solid transparentize($red, 0.5);
+  border-left: 1px solid transparentize($red, 0.5);
+
+  &:last-child {
+    border-left: none;
+  }
+}
+
+.vv-status--good {
+  border-collapse: separate;
+  border-color: 1px solid $teal;
+  background: transparentize($teal, 0.9)
+}
+
+.vv-status--good > .vv-table__td {
+  color: $teal;
+  border-color: transparentize($teal, 0.5);
+  border-top: 1px solid transparentize($teal, 0.5);
+  border-left: 1px solid transparentize($teal, 0.5);
+
+  &:last-child {
+    border-left: none;
+  }
+}
