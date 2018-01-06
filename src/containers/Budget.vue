@@ -46,25 +46,29 @@
                     <tr class="vv-table__tr">
                       <td class="vv-table__td">Scholarships</td>
                       <td class="vv-table__td vv-table--align-right vv-table--td-bold">
-                        <input type="text" placeholder="0" class="vv-input" v-model="scholarships" />
+                        <!-- This input needs modification -->
+                        <input type="text" placeholder="0" class="vv-input" />
                       </td>
                     </tr>
                     <tr class="vv-table__tr">
                       <td class="vv-table__td">Other Loans</td>
                       <td class="vv-table__td vv-table--align-right vv-table--td-bold">
-                        <input type="text" placeholder="0" class="vv-input" v-model="otherLoans" />
+                        <!-- This input needs modification -->
+                        <input type="text" placeholder="0" class="vv-input" />
                       </td>
                     </tr>
                     <tr class="vv-table__tr">
                       <td class="vv-table__td">Loan from Prodigy</td>
                       <td class="vv-table__td vv-table--align-right vv-table--td-bold">
-                        <input type="text" placeholder="0" class="vv-input" v-model="prodigyLoans" />
+                        <!-- This input needs modification -->
+                        <input type="text" placeholder="0" class="vv-input" />
                       </td>
                     </tr>
                     <tr class="vv-table__tr">
                       <td class="vv-table__td">Savings</td>
                       <td class="vv-table__td vv-table--align-right vv-table--td-bold">
-                        <input type="text" placeholder="0" class="vv-input" v-model="savings" />
+                        <!-- This input needs modification -->
+                        <input type="text" placeholder="0" class="vv-input" />
                       </td>
                     </tr>
 
@@ -80,19 +84,27 @@
                   <table class="vv-table vv-table-information">
                     <tr class="vv-table__tr">
                       <td class="vv-table__td">Scholarships</td>
-                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">{{ scholarships }}</td>
+                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">
+                        <!-- Something Goes Here -->
+                      </td>
                     </tr>
                     <tr class="vv-table__tr">
                       <td class="vv-table__td">Other Loans</td>
-                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">{{ otherLoans }}</td>
+                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">
+                        <!-- Something Goes Here -->
+                      </td>
                     </tr>
                     <tr class="vv-table__tr">
                       <td class="vv-table__td">Loans from Prodigy Finance</td>
-                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">{{ prodigyLoans }}</td>
+                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">
+                        <!-- Something Goes Here -->
+                      </td>
                     </tr>
                     <tr class="vv-table__tr">
                       <td class="vv-table__td">Savings</td>
-                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">{{ savings }}</td>
+                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">
+                        <!-- Something Goes Here -->
+                      </td>
                     </tr>
                   </table>
                 </vv-card-content>
@@ -104,7 +116,7 @@
                         <tr class="vv-table__tr" v-bind:class="statusClass">
                           <td class="vv-table__td">OUTSTANDING BALANCE</td>
                           <td class="vv-table__td vv-table--align-right vv-table--td-bold">
-                            {{ outstandingBalance }}
+                            <!-- Something Goes Here -->
                           </td>
                         </tr>
                       </table>
@@ -164,20 +176,14 @@
     },
     computed: {
       outstandingBalance() {
-        const amount = this.coaFc - (this.checkNan(this.scholarships) +
-                                     this.checkNan(this.otherLoans) +
-                                     this.checkNan(this.prodigyLoans) +
-                                     this.checkNan(this.savings));
-
-        return this.normalizeAmount(amount);
+        // Calculate the outstanding balance, remember to use checkNan and normalizeAmount
+        // to help with the display
       },
     },
 
     watch: {
       outstandingBalance(value) {
-        const budgetMet = value === 0;
-        this.statusClass = budgetMet ? 'vv-status--good' : 'vv-status--bad';
-        this.showSubmit = budgetMet;
+        // Add something here for dynamic classes and reveals
       },
     },
 
