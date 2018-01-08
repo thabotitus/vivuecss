@@ -1,5 +1,5 @@
 ### Getting Started
-Run `npm install; nomo run dev` and that should start a server on port 8080.
+Run `npm install; npm run dev` and that should start a server on port 8080.
 Open the app and navigate to 'budget' in the topbar.
 
 The file you will be modifying is 'src/containers/Budget.vue'
