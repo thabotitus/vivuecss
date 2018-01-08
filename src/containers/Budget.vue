@@ -182,6 +182,7 @@
     },
 
     watch: {
+      // eslint-disable-next-line
       outstandingBalance(value) {
         // Add something here for dynamic classes and reveals
       },
