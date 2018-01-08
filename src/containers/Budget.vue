@@ -28,10 +28,6 @@
                       <td class="vv-table__td">Cost of Attendance For Your Full Course</td>
                       <td class="vv-table__td vv-table--align-right vv-table--td-bold">{{ coaFc }}</td>
                     </tr>
-                    <tr class="vv-table__tr">
-                      <td class="vv-table__td">Cost of Attendance For Application Year</td>
-                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">{{ coaAy }}</td>
-                    </tr>
                   </table>
                 </vv-card-content>
               </vv-card>
@@ -169,7 +165,6 @@
         prodigyLoans: '',
         savings: '',
         coaFc: 136756,
-        coaAy: 44879,
         statusClass: 'vv-status--bad',
         showSubmit: false,
       };
