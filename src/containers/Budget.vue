@@ -25,8 +25,8 @@
                 <vv-card-content>
                   <table class="vv-table vv-table-information">
                     <tr class="vv-table__tr">
-                      <td class="vv-table__td">Cost of Attendance For Your Full Course</td>
-                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">{{ coaFc }}</td>
+                      <td class="vv-table__td" width="75%">Cost of Attendance For Your Full Course</td>
+                      <td class="vv-table__td vv-table--align-right vv-table--td-bold">{{ costOfAttendance }}</td>
                     </tr>
                   </table>
                 </vv-card-content>
@@ -40,7 +40,7 @@
                 <vv-card-content>
                   <table class="vv-table vv-table-information">
                     <tr class="vv-table__tr">
-                      <td class="vv-table__td">Scholarships</td>
+                      <td class="vv-table__td" width="75%">Scholarships</td>
                       <td class="vv-table__td vv-table--align-right vv-table--td-bold">
                         <!-- This input needs modification -->
                         <input type="text" placeholder="0" class="vv-input" />
@@ -79,7 +79,7 @@
                 <vv-card-content>
                   <table class="vv-table vv-table-information">
                     <tr class="vv-table__tr">
-                      <td class="vv-table__td">Scholarships</td>
+                      <td class="vv-table__td" width="75%">Scholarships</td>
                       <td class="vv-table__td vv-table--align-right vv-table--td-bold">
                         <!-- Something Goes Here -->
                       </td>
@@ -110,7 +110,7 @@
                     <div class="col col--1-small">
                       <table class="vv-table vv-table-information">
                         <tr class="vv-table__tr" v-bind:class="statusClass">
-                          <td class="vv-table__td">OUTSTANDING BALANCE</td>
+                          <td class="vv-table__td" width="75%">OUTSTANDING BALANCE</td>
                           <td class="vv-table__td vv-table--align-right vv-table--td-bold">
                             <!-- Something Goes Here -->
                           </td>
@@ -164,7 +164,7 @@
         otherLoans: '',
         prodigyLoans: '',
         savings: '',
-        coaFc: 136756,
+        costOfAttendance: 136756,
         statusClass: 'vv-status--bad',
         showSubmit: false,
       };
